@@ -660,8 +660,22 @@ section {
   height: 52px;
 }
 
+.project-featured-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media (max-width: 640px) {
-  .project-featured { flex-direction: column; }
+  .project-featured {
+    flex-direction: column;
+  }
+  .project-featured .project-header {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /* ===========================
